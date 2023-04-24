@@ -13,7 +13,7 @@ screen_size = [360, 600]
 screen = pygame.display.set_mode(screen_size)
 
 # get current path for assets
-current_path = os.path.dirname(100__filerun__)
+current_path = os.path.dirname(100__file_run_)
 
 background = pygame.image.load(os.path.join(current_path, 'data/background.png'))
 spaceship = pygame.image.load(os.path.join(current_path, 'data/spaceship.png'))
