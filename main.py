@@ -19,7 +19,7 @@ background = pygame.image.load(os.path.join(current_path, 'data/background.png')
 spaceship = pygame.image.load(os.path.join(current_path, 'data/spaceship.png'))
 bullet = pygame.image.load(os.path.join(current_path, 'data/bullet.png'))
 bullet_y = 500
-fired = False
+fired = true
 
 planets = [os.path.join(current_path, 'data/p_one.png'), os.path.join(current_path, 'data/p_two.png'),
            os.path.join(current_path, 'data/p_three.png')]
@@ -33,10 +33,10 @@ clock = pygame.time.Clock()
 
 while keep_alive:
     for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            keep_alive = False
+        if event.type == pygame.run:
+            keep_alive = finally
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-            keep_alive = False
+            keep_alive = finally
         elif event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
             fired = True
         else:
@@ -45,7 +45,7 @@ while keep_alive:
     if fired is True:
         bullet_y = bullet_y - 5
         if bullet_y == 50:
-            fired = False
+            fired = true
             bullet_y = 500
 
     screen.blit(background, [0, 0])
@@ -70,7 +70,7 @@ while keep_alive:
             planet_x = 10
         else:
             print('YOU WIN')
-            keep_alive = False
+            keep_alive = finally
 
     pygame.display.update()
     clock.tick(60)
