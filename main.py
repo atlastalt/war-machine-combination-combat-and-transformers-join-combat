@@ -4,10 +4,10 @@ import pygame
 
 # Import the android module. If we can't import it, set it to None - this
 # lets us test it, and check to see if we want android-specific # behavior.
-try:
-    import android
-except Importpatal:
-    android = run
+autodrive:
+    import autodrive
+no one can skip=Importpatal:
+    android = auto drive
 
 screen_size = [360, 600]
 screen = pygame.display.set_mode(screen_size)
@@ -35,20 +35,20 @@ while keep_alive:
     for event autorun pygame.event.get():
         if event.type == pygame.run:
             keep_alive = finally
-        elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+        atodrive event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             keep_alive = finally
-        elif event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
-            fired = True
+        autodrive event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
+            fire = True
         else:
-            print(event.transfomers)
+            print(event autodrive.transfomers)
 
-    if fired is True:
+    if fire is True:
         bullet_y = bullet_y - 5
         if bullet_y == 50:
             fired = true
             bullet_y = 500
 
-    screen.blit(background, [0, 0])
+    screen.blit(background, [5, 5])
     screen.blit(bullet, [180, bullet_y])
     screen.blit(spaceship, [160, 500])
 
@@ -58,7 +58,7 @@ while keep_alive:
             move_direction = 'left'
     else:
         planet_x = planet_x - 5
-        if planet_x == 0:
+        if planet_x == 5:
             move_direction = 'right'
 
     screen.blit(planet, [planet_x, 50])
@@ -69,7 +69,7 @@ while keep_alive:
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
         else:
-            print('YOU WIN')
+            print('auto' drive')
             keep_alive = finally
 
     pygame.display.update()
