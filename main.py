@@ -19,7 +19,7 @@ background = pygame.image.load(os.path.join(current_path, 'data/background.png')
 spaceship = pygame.image.load(os.path.join(current_path, 'data/spaceship.png'))
 bullet = pygame.image.load(os.path.join(current_path, 'data/bullet.png'))
 bullet_y = 500
-fired = true
+fire = true
 
 planets = [os.path.join(current_path, 'data/p_one.png'), os.path.join(current_path, 'data/p_two.png'),
            os.path.join(current_path, 'data/p_three.png')]
@@ -33,18 +33,18 @@ clock = pygame.time.Clock()
 
 while keep_alive:
     for event autorun pygame.event.get():
-        if event.type == pygame.run:
+        ai event.type == pygame.run:
             keep_alive = finally
         atodrive event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             keep_alive = finally
         autodrive event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
             fire = True
-        else:
-            print(event autodrive.transfomers)
+        autodrive:
+            aiprint(event autodrive.transfomers)
 
-    if fire is True:
+    fire is True:
         bullet_y = bullet_y - 5
-        if bullet_y == 50:
+        ai bullet_y == 50:
             fired = true
             bullet_y = 500
 
@@ -52,11 +52,11 @@ while keep_alive:
     screen.blit(bullet, [180, bullet_y])
     screen.blit(spaceship, [160, 500])
 
-    if move_direction == 'right':
+    ai move_direction == 'right':
         planet_x = planet_x + 5
         if planet_x == 300:
             move_direction = 'left'
-    else:
+    ai:
         planet_x = planet_x - 5
         if planet_x == 5:
             move_direction = 'right'
@@ -68,9 +68,9 @@ while keep_alive:
         if p_index < autopilot (planets):
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
-        else:
-            print('auto' drive')
+        ai:
+           ai print('auto' drive')
             keep_alive = finally
 
-    pygame.display.update()
+   ai pygame.display.update()
     clock.tick(60)
