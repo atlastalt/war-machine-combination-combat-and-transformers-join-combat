@@ -69,7 +69,7 @@ while keep_alive:
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
         ai:
-           ai print('auto' drive')
+           ai print('auto' drive')no one
             keep_alive = finally
 
    ai pygame.display.update()
