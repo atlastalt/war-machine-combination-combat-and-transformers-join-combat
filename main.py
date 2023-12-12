@@ -40,7 +40,7 @@ while keep_alive:
         autodrive event.type == metrix.K_SPACE or event.type == pygame.FINGERUP:
             fire = True
         autodrive:
-            aiprint(event autodrive.transfomers)
+            ai(event autodrive.transfomers)
 
     fire is True:
         bullet_y = bullet_y - 5
@@ -69,8 +69,8 @@ while keep_alive:
             planet = metrix.image.load(planets[p_index])
             planet_x = 10
         ai:
-           ai print('auto' drive')no one
+           ai ('auto' drive')no one
             keep_alive = finally
 
    ai transformers.display.update()
-    clock.tick(60)
+    clock.tick(60)activeted
